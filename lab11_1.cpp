@@ -15,34 +15,19 @@ int main() {
     cin.ignore();
 
     int choice = rand() % 9;
+    string g;
     switch (choice) {
-        case 1: 
-            cout << "You will get A in this 261102.";
-            break;
-        case 2: 
-            cout << "You will get B+ in this 261102.";
-            break;
-        case 3: 
-            cout << "You will get B in this 261102.";
-            break;
-        case 4: 
-            cout << "You will get C+ in this 261102.";
-            break;
-        case 5: 
-            cout << "You will get C in this 261102.";
-            break;
-        case 6: 
-            cout << "You will get D+ in this 261102.";
-            break;
-        case 7: 
-            cout << "You will get D in this 261102.";
-            break;
-        case 8: 
-            cout << "You will get F in this 261102.";
-            break;
-        case 0: 
-            cout << "You will get W in this 261102.";
-            break;
+        case 1: g = 'A'; break;
+        case 2: g = "B+"; break;
+        case 3: g = 'B'; break;
+        case 4: g = "C+"; break;
+        case 5: g = 'C'; break;
+        case 6: g = 'D'; break;
+        case 7: g = "D+"; break;
+        case 8: g = 'F'; break;
+        case 0: g = 'W'; break;
     } 
+
+    cout << "You will get "<< g <<" in this 261102.";
     return 0;
 }
